@@ -1,0 +1,25 @@
+<%-include("partials/Header.ejs")%>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mt-5">
+                <h2 class="alert alert-success text-centre">Update Data
+                </h2>
+                <form method="post" action="/student/update/<%=data.id%>">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" value="<%=data.name%>">
+
+                        <label for="Age" class="form-label">Age</label>
+                        <input type="text" class="form-control" name="age" id="age" value="<%=data.age%>">
+
+                        <label for="Fees" class="form-label">Fees</label>
+                        <input type="text" class="form-control" name="name" id="name" value="<%=data.fees%>">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Update</button>
+                    <button type="submit" class="btn btn-secondary">Back to home</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <%-include("partials/Footer.ejs")%>
